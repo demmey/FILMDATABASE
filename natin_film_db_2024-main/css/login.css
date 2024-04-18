@@ -1,0 +1,124 @@
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #5b5a5a;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Login Form Styles */
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff3c;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.login-form h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #f5c518;
+    border-radius: 2px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #756c6c;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    background-color: #776969;
+}
+
+.login-form button[type="submit"] {
+    padding: 15px;
+    background-color: #f5c518;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #e8b10c;
+}
+
+.login-form .error {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 30px;
+    }
+}
+.signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #69763f; 
+    text-decoration: cornsilk; /* Remove default underline */
+}
+
+.signup-link:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 100px; /* Adjust as needed */
+    border-bottom: 1px solid #756e6e; /* Adjust border style as needed */
+}
+
